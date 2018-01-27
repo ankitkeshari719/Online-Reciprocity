@@ -1,3 +1,68 @@
-<div class="container ">
 
+<!-- Intro container -->
+<div class="container intro-container" id="intro">
+
+    <div class="row text-center intro-text">
+        <h3>Reciprocity</h3>
+        <h5>The practice of exchanging things with others for mutual benefit, especially privileges granted by one country or organization to another.</h5>
+    </div>
+
+    <div class="row intro-items">
+        <div class="col-xs-6 col-image">
+            <div class="stub1">
+            </div>
+            <img src="images/reciprocity_intro_image.png" class="product-image" />
+        </div>
+        {{log}}
+
+        <div class="col-xs-6 col-forms">
+            <div class="forms-container">
+
+                <!-- Signin form -->
+                <form id="signin-form">
+                    <h1>Sign in</h1>
+                    <div class="signin-email">
+                        <label for="email"></label>
+                        <input id="email" type="email" placeholder="My email" ng-model="signinCredentials.email" />
+                    </div>
+                    <div class="signin-password">
+                        <label for="password"></label>
+                        <input id="password" type="password" placeholder="My super-secret password" ng-model="signinCredentials.password" />
+                    </div>
+                    <div class="text-danger" ng-if="loginError">
+                        <p> Please enter valid username and password !</p>
+                    </div>
+
+                    <div class="signin-buttons">
+                        <input type="submit" value="Sign in" class="button button-main" ng-click="signIn()"/>
+                        <input type="button" value="Create new account" class="button button-aside flip" />
+                    </div>
+                </form>
+
+                <!-- Register form -->
+                <form id="register-form">
+                    <h1>Get an account</h1>
+                    <div class="register-name">
+                        <label for="registationName"></label>
+                        <input id="registationName" type="text" placeholder="My name is" ng-model="registerCredentials.name" />
+                    </div>
+                    <div class="register-email">
+                        <label for="registationEmail"></label>
+                        <input id="registationEmail" type="email" placeholder="My email is" ng-model="registerCredentials.email" />
+                    </div>
+                    <div class="register-password">
+                        <label for="password"></label>
+                        <input  id="registationpassword" type="password" placeholder="My super-secret password is" ng-model="registerCredentials.password" />
+                    </div>
+                    <div class="register-buttons">
+                        <input type="submit" value="Register now" class="button button-main" ng-click="register()" />
+                        <input type="button" value="Already have an account?" class="button button-aside flip" />
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+    <div class="stub2">
+    </div>
 </div>

@@ -1,3 +1,19 @@
-<div class="footer">
-    <center><p><span>Copyright &copy; 2017 by <a href=https://ankitkeshari719.github.io/#top" target="blank">Online  Reciprocity.</a></span> All Rights Reserved.</p></center>
-</div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row text-center">
+            <p>
+                &copy; <span id="copyright-years">2017</span> Online Reciprocity &nbsp;&bull;&nbsp; View code <a href="https://github.com/ankitkeshari719/Online-Reciprocity" target="_blank">on GitHub</a>
+            </p>
+
+            <script>
+                var currYear = new Date().getFullYear();
+                if(currYear != '2017')
+                    document.getElementById('copyright-years').appendChild(document.createTextNode(' - ' + currYear));
+            </script>
+
+            <p class="icon"><span class="fa fa-paperclip"></span></p>
+        </div>
+    </div>
+</footer>
+<!-- /.Footer -->
